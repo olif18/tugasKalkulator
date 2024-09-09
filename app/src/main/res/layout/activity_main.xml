@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:alpha="0.9"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#33372C"
+            android:text="Calculate"
+            android:textSize="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:id="@+id/title"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#33372C"
+            android:textColor="#33372C"
+            android:hint="Angka a"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/angka1"
+            android:inputType="number">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#33372C"
+            android:textColor="#33372C"
+            android:hint="Angka b"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/angka2"
+            android:inputType="number">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#33372C"
+            android:text="Pilih operasi"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/operasi">
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/operator">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#33372C"
+                android:text="+"
+                android:textSize="28dp"
+                android:id="@+id/tambah">
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#33372C"
+                android:text="-"
+                android:textSize="28dp"
+                android:id="@+id/kurang">
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#33372C"
+                android:text="*"
+                android:textSize="24dp"
+                android:id="@+id/kali">
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#33372C"
+                android:text="/"
+                android:textSize="24dp"
+                android:id="@+id/bagi">
+            </RadioButton>
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:textColor="#000000"
+            android:backgroundTint="#C68FE6"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/btnHitung">
+        </Button>
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
